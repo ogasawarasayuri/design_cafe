@@ -1,0 +1,497 @@
+@charset "utf-8";
+
+body{
+    background-color:#FFEFD5;
+    font-feature-settings: "palt";/*メトリクスの設定*/
+
+    
+}
+.header__inner{
+    display: flex;/*親要素に対して子要素を横並びにする*/
+    justify-content: space-between;/*横並びの要素を両端をそろえて均等に配置する*/
+    align-items: center;/*子要素を上下中央に揃える指定*/
+    padding-left: 2.7%;/*52/1920=0.02708..→2.7%..*/
+    padding-right: 7.1%;/*138/1920=0.071875..→7.1%..*/
+    position: absolute;/*絶対配置を指定する値*/
+    width: 100%;/*画面幅いっぱいに拡大する*/
+    z-index: 9997;
+
+}
+
+.header__nav ul{
+    display: flex;
+    gap:50px;/*行やれるのすき間を定義*/
+}
+.header__nav li{
+    color: #fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+      font-weight: bold;
+}
+h1{
+    width: 227px;
+}
+
+
+
+.top_text,
+.heading__h2{
+    text-align: center;/*要素を中央寄せする値*/
+}
+.top_text{
+    font-size: 30px;
+    font-weight: normal;
+    padding-top: 103PX;
+    padding-bottom: 60px;
+}
+.heading__h2{
+    font-size: 82px;
+    letter-spacing: 0.1em;/*文字を詰める*/
+    padding-bottom: 50px;
+}
+.text{
+    text-align:center;/*要素を中央寄せする値*/
+    font-size: 23px;
+    line-height: 1.65;/*文字の大きさと上下の余白を合わせた高さのこと*/
+    padding-bottom: 85px;
+}
+
+#Aboutus{
+    max-width: 1000px;
+    margin: 0 auto;/*ブロックレベル要素自体を中央揃えにする*/
+    display: flex;
+    align-items: center;
+    gap:75px;
+    padding: 10px;
+    padding-bottom: 87px;
+    
+}
+.heading__h3 img{
+    height:78px;
+    width: auto;
+}
+
+.aboutus__img,
+.aboutus__text-area{
+    width: 50%;/*画像ときテスト部分が半分なため*/
+}
+.aboutus__img img{
+    border-bottom-right-radius:75px;/*写真の右角をカーブさせる*/
+}
+
+h3{
+    font-size: 44px;
+    padding-bottom: 36px;
+}
+.about__text{
+    line-height: 1.62;
+}
+
+#Menu{
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-bottom: 40px;
+    
+}
+
+.menu__photo {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    gap: 50px;
+}
+
+.menu__photo li{
+    border-top-right-radius:40px;
+    width: 32.8%;
+}
+.menu__photo img{
+    border-top-right-radius:40px;
+    width: 100%;
+
+}
+
+.items{
+    color: #DD0000	;
+    font-size: 38px;
+    padding-left: 10px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.menu_text{
+    font-size: 17px;
+    line-height: 1.47;
+}
+
+#Gallery{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 88px;
+    padding-bottom: 24px;
+
+}
+
+.Gallery__photo ul{
+    display: flex;
+    padding-bottom: 61px;
+}
+
+.data-title{
+    color: #fff;
+}
+
+#Event{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom:72px;
+    
+}
+
+.box{
+    display: flex;
+    justify-content: center;/*横並びの要素を中央寄せで配置する指定*/
+    background-color: #fff;
+    border: solid 4px #4f260b;
+    max-width:1000px;
+    padding: 10px;
+    margin: auto;
+}
+.box ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;/*それぞれの要素に均等な余白をつける*/
+    text-align:left;/*要素を左寄せにする*/
+
+}
+.box li{
+    padding:16px ;
+    font-size: 23px;
+
+}
+.date{ 
+    padding-right: 40px;
+
+}
+.Event__text{
+    text-decoration:underline;/*アンダーライン*/
+}
+
+#Access{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 77px;
+
+}
+
+iframe{
+    height: 100vh;
+    filter: grayscale(100%) invert(92%) contrast(83%);
+    height: 470px;
+    width: 100%;
+
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    background-color:  #ffffff;
+    padding-top: 75px;
+
+}
+
+.footer__box img{
+    height: 50px;
+    width: auto; 
+   
+}
+.footer__text ul{
+    padding-bottom: 76px;
+}
+.footer__text li{
+    flex-direction: column;
+    padding-left: 65px;
+    padding-bottom: 21px;
+}
+.Copyright{
+    display: flex;
+    text-align: center;
+    padding-bottom: 80px;
+}
+.totop{
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+    width: 125px;
+}
+
+.header__nav-sp{
+    display: none;
+}
+
+.aboutus-sp{
+    display: none;
+}
+.hidden{
+    display: none;
+ }
+
+
+@media screen and (max-width:1100px){
+    .header__nav{
+    display: none;
+ }
+ 
+  .hamburger{
+    width: 30px;
+    height: 30px;
+    position: absolute;/*最前面に配置*/
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    cursor: pointer;
+ }
+  .hamburger span{
+    position:absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    top: 50%;
+    transition: 0.3s;
+ }
+  .hamburger span::before{
+    position:absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    top: -10px;
+    transition: 0.3s;
+ }
+  .hamburger span::after{
+    position:absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    bottom: -10px;
+    transition: 0.3s;
+ }
+  .open span{
+    background-color: transparent;
+ }
+  .open span::before{
+   transform: rotate(45deg);
+   top:0;
+ }
+  .open span::after{
+    transform: rotate(-45deg);
+    bottom: 0;
+ }
+ .header__nav-sp{
+    position: absolute;
+    background-color: #00000090;/*最後を90にすると半透明になる*/
+    width: 100%;
+    height: 100vh;
+    z-index: 9998;
+ }
+ .header__nav-sp ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }
+ .header__nav-sp li{
+   color: #fff;
+   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: bold;
+ }
+ .top_text{
+    font-size: 20px;
+ }
+ .heading__h2{
+    font-size: 60px;
+ }
+
+ 
+}
+@media screen and (max-width:767px){
+     
+.top_text{
+    font-size: 17px;
+    padding-top: 39px;
+    padding-bottom: 22px;
+ }
+.heading__h2{
+    letter-spacing: 0;
+    font-size: 38px;
+    padding-bottom: 33px;
+ }
+ 
+ 
+.text{
+    font-size: 16px;
+    line-height: 1.87;
+    padding-bottom: 62px;
+ }
+ .hidden{
+    display: block;
+ }
+
+.heading__h3 img{
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    width: auto;
+    margin: 0 auto;
+ }
+.about-us{
+    display: none;
+ }
+ 
+ #Aboutus,
+ .aboutus-sp{
+    display: block;
+    padding: 0;
+}
+
+.aboutus__text-area,
+.aboutus__img-sp{
+    width: 100%;
+}
+.heading__h3 h3{
+    padding-bottom: 15px;
+}
+.aboutus__img-sp h3{
+    font-size: 36px;
+    line-height: 1.25;
+    padding-top: 34px;
+    padding-left: 16px;
+
+}
+.aboutus__img-sp h3{
+    padding-left:16px;
+}
+.aboutus__img-sp p{
+    padding: 0 16px;
+    padding-bottom: 51px;
+}
+
+#Menu{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+       
+ }
+.menu__text-area h3{
+    padding-bottom: 19px;
+ }
+
+.menu__photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+ }
+.menu__photo li {
+    width: 100%;
+    padding: 0 25px;
+        
+ }
+     
+.items{
+    color: #DD0000	;
+    font-size: 40px;
+    padding-left: 10px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+ }
+ .Gallery__photo h3{
+    padding-bottom: 18px;
+ }
+ .Gallery__photo ul{
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+    
+
+ }
+#Event {
+    padding-bottom: 26px;
+    padding: 10px;
+        
+ }
+.box{
+    display: block;
+ }
+.date {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding-top: 15px;
+ }
+
+.Event__text {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    
+}
+
+.Event__area h3{
+    padding-bottom: 16px;
+ }
+ 
+ #Access{
+    padding-top: 20px;
+ }
+.Access__area h3{
+    padding-bottom: 7px;
+ }
+iframe{
+    height: 195px;
+    width: 100%;
+ } 
+#footer{
+    flex-direction: column;
+    padding-top: 45px;
+    
+}
+.footer__box img{
+    height: 50px;
+    width: auto;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    
+}
+.footer__text li{
+    padding-left: 10px;
+    font-size: 18px;
+}
+.Copyright{
+    flex-direction: column; 
+    font-size: 16px;
+}
+}
+
+.slick-dots{
+    bottom: 0;/*スライドした時に・・が画像の上に配置される*/
+}
+.slick-dots li.slick-active button:before ,/*・・を白にする*/
+.slick-dots li button:before {
+    color: #fff;
+}
+.lb-data .lb-number {
+    display: none !important;/*あまり多用しないがどうしても他の要素が優先されてしまう時にimportantで最優先される*/
+}
+
+.lb-data .lb-caption {
+    color:#fff;
+}
